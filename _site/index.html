@@ -20,18 +20,45 @@
     </tr>
 </thead>
 
-{% for page in site.pages %}
-{% if page.name contains '.md' and page.name != 'index.md' %}
+
+
+
+
     <tbody>
     <tr>
-    <td>{{ page.dir | replace: '/', '' }}</td>
-    <td><a href="{{ page.url | relative_url }}">{{ page.name | replace: '.md', '' }}</a></td>
-    <td>{{ page.model_type }}</td>
-    <td>{{ page.content | markdownify | strip_html }}</td>
+    <td>llama</td>
+    <td><a href="/llama/grant.html">grant</a></td>
+    <td>text_classif</td>
+    <td>My First Markdown File
+
+Hello, this is the content of my first Markdown file.
+
+how is your day
+</td>
     </tr>
     </tbody>
-{% endif %}
-{% endfor %}
+
+
+
+
+
+    <tbody>
+    <tr>
+    <td></td>
+    <td><a href="/test.html">test</a></td>
+    <td></td>
+    <td>My First Markdown File
+
+Hello, this is the content of my first Markdown file.
+</td>
+    </tr>
+    </tbody>
+
+
+
+
+
+
 </table>
 
 <script>

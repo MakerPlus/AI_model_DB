@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Entry: Learn How to Code</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="blog-post">
+                    <h2 class="blog-post-title">{{ page.title }}</h2>
+                    <p class="blog-post-meta">{{ page.date | date: "%B %e, %Y" }} by <a href="#">{{ page.author }}</a></p>
+                    <hr>
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
